@@ -1,0 +1,21 @@
+<?php
+include_once ('Rectangle.php');
+include_once ('Square.php');
+include_once ('Circle.php');
+include_once ('Cylinde.php');
+$Rectangle = new Rectangle('Hình CN',10,5);
+$Square = new Square('Hình vuông',5);
+$Circle = new Circle('Hình tròn',10);
+$Cylinde = new Cylinde('Hình trụ',10,15);
+echo $Rectangle->show().'<br>';
+echo $Rectangle->calculateArea().'<br>';
+echo $Rectangle->calculatePerimeter().'<br><br>';
+echo $Square->show().'<br>';
+echo $Square->calculateArea().'<br>';
+echo $Square->calculatePerimeter().'<br><br>';
+echo $Circle->show().'<br>';
+echo $Circle->calculatePerimeter().'<br>';
+echo $Circle->calculatePerimeter().'<br><br>';
+echo $Cylinde->show().'<br>';
+echo $Cylinde->calculateArea().'<br>';
+echo $Cylinde->calculateVolume().'<br>';
